@@ -1,0 +1,36 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+.App{
+    max-width: 1230px;
+    min-height: 100vh;
+    margin:0 auto;
+    padding:0 20px;
+    box-shadow: 0 0 15px #eed;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+button{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+@import url("./components/headers/Header.css");
+@import url("./components/mainpages/Products/Product.css");
+@import url("./components/mainpages/login/Login.css");
+@import url("./components/mainpages/login/Register.css");
+

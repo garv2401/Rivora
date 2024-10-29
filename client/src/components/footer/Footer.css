@@ -1,0 +1,161 @@
+/* General Footer Styles */
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #6c757d; /* Muted text color */
+    padding: 2rem 0; /* Top and bottom padding */
+  }
+  
+  footer a {
+    color: inherit; /* Inherit text color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.2s ease-in-out; /* Smooth hover transition */
+  }
+  
+  footer a:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  /* Social Media Section */
+  footer .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Border below social media icons */
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer .me-4 {
+    margin-right: 1.5rem; /* Margin between social media icons */
+  }
+  
+  footer .fab {
+    font-size: 1.5rem; /* Increase icon size */
+  }
+  
+  footer .fab:hover {
+    color: #007bff; /* Change color of social media icons on hover */
+  }
+  
+  /* Company Info */
+  footer h6 {
+    font-weight: bold; /* Bold font for section headings */
+    text-transform: uppercase; /* Uppercase for section headings */
+    margin-bottom: 1.5rem; /* Space between heading and content */
+  }
+  
+  footer p {
+    font-size: 0.9rem; /* Smaller font for paragraphs */
+    margin-bottom: 1rem; /* Space between paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+  }
+  
+  /* Columns in Footer */
+  footer .container {
+    max-width: 1140px; /* Responsive width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  footer .row {
+    display: flex; /* Flexbox for row layout */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+    gap: 1.5rem; /* Add space between columns */
+  }
+  
+  /* Column Sizing */
+  footer .col-md-3, footer .col-md-2, footer .col-md-4 {
+    flex: 1; /* Allow columns to grow and shrink */
+    min-width: 250px; /* Ensure minimum width for each column */
+  }
+  
+  footer .col-md-3 h6, footer .col-md-2 h6, footer .col-md-4 h6 {
+    margin-bottom: 1rem; /* Add space below each section heading */
+  }
+  
+  footer .col-md-3, footer .col-md-2, footer .col-md-4 {
+    margin-bottom: 2rem; /* Bottom margin for better spacing */
+  }
+  
+  /* Contact Section */
+  footer .contact-info p {
+    display: flex; /* Flex for icon alignment */
+    align-items: center; /* Align icons with text */
+  }
+  
+  footer .contact-info i {
+    margin-right: 0.75rem; /* Spacing between icon and text */
+    color: #6c757d; /* Muted color for icons */
+  }
+  
+  footer .contact-info p:hover i {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  /* Product Links */
+  footer .text-reset {
+    color: #6c757d; /* Muted link color */
+  }
+  
+  footer .text-reset:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  /* Copyright Section */
+  footer .copyright {
+    background-color: rgba(0, 0, 0, 0.05); /* Light gray background for copyright */
+    padding: 1rem 0; /* Padding for copyright area */
+  }
+  
+  footer .copyright a {
+    color: #007bff; /* Blue color for copyright link */
+    font-weight: bold; /* Bold for emphasis */
+  }
+  
+  footer .copyright a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 992px) {
+    footer .me-5 {
+      display: none; /* Hide the "Get connected" text on smaller screens */
+    }
+  
+    footer .d-none.d-lg-block {
+      display: none; /* Hide this section on smaller screens */
+    }
+  
+    footer .col-md-3, footer .col-md-2, footer .col-md-4 {
+      flex-basis: 100%; /* Full width for columns on smaller screens */
+      text-align: center; /* Center-align content */
+    }
+  
+    footer .contact-info {
+      margin-top: 1.5rem; /* Extra spacing on small screens */
+    }
+  }
+  
+  /* Section Heading Styles */
+  footer h6 i {
+    margin-right: 0.75rem; /* Margin between icon and text */
+    color: #007bff; /* Blue color for the heading icon */
+  }
+  
+  footer .fw-bold {
+    font-weight: bold; /* Ensure bold text where needed */
+  }
+  
+  /* Social Media Hover Effects */
+  footer .social-links a:hover {
+    color: #007bff; /* Blue color for all social media links on hover */
+  }
+
+  footer .text-center{
+    text-align: center;
+  }
+
+  footer .p-4{
+    padding:4;
+  }
+
+  footer .fs-m{
+    font-size: large;
+  }
+  

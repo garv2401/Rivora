@@ -1,0 +1,14 @@
+.products{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-items: center;
+    margin:20px;
+    margin:10px 0;
+    position: relative;
+    
+}
+
+
+
+@import url("../utils/ProductList.css")

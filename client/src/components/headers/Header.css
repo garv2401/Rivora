@@ -1,0 +1,247 @@
+header{
+    width:100%;
+    min-height: 70px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #edd;
+}
+
+@media (max-width:1000px){
+    header{
+        width:100%;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        align-items: center;
+        border-bottom: 1px solid #edd;
+    }
+
+    .icons .userinfo{
+        display: none;
+    }
+    
+
+}
+
+header.logo h1{
+    flex:1;
+    text-transform: none;
+
+}
+
+.logo h1{
+    margin-top:8px;
+}
+
+.logo{
+    display:flex;
+    gap:7px;
+    
+}
+
+.logo img{
+    width:60px;
+    height:50px;
+    
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+}
+
+header ul li{
+    display:inline-block;
+    opacity:0.7;
+    padding:0 20px;
+}
+
+header ul li:hover{
+    opacity: 1;
+}
+
+
+.cart-icon{
+    position:relative;
+    
+}
+
+.cart-icon span{
+    background-color: crimson;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    padding:5px 7px;
+    font-size: 10px;
+}
+
+.icons{
+    display: flex;
+    gap:30px;
+}
+
+.userinfo{
+    display: flex;
+    gap:10px;
+
+}
+
+.userinfo:hover{
+    cursor: pointer;
+}
+
+.userinfo p{
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.showMenu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 80vw;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    z-index: 3;
+    
+    transform: translateX(-100%);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .showMenu.active {
+    transform: translateX(0); /* Slide in when active */
+    left:0;
+    transition: left 0.5s ease-in-out;
+  }
+
+  .showMenu.active .crossBtn{
+    position: fixed;
+    top:10px;
+    left:85%;
+
+}
+
+
+@media (min-width:1000px){
+    .showMenu {
+        position: fixed;
+        top: 0;
+        left: 0; /* Start off-screen to the left */
+        width: 400px;
+        height: 100vh;
+        background-color: #333;
+        color: white;
+        z-index: 3;
+        
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .showMenu.active {
+        transform: translateX(0); /* Slide in when active */
+      }
+
+      .showMenu.active .crossBtn{
+        position: fixed;
+        top:10px;
+        left:90%;
+    
+    }
+    
+}
+
+  
+
+/* .showMenu.active .userContainer .info{
+    position: fixed;
+    top:100px;
+    left:38%;
+    
+
+} */
+
+/* .showMenu.active .userContainer .userlogo{
+    position: fixed;
+    top:20px;
+    left:43%;
+}
+
+
+.info p{
+    font-size: 1.1rem;
+    font-weight: bold;
+} */
+
+.showMenu.active .userContainer{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:-10%;
+    gap:20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.options ul{
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.options ul li a{
+    text-transform: none;
+    color: white;
+
+}
+
+.options ul li:hover{
+    cursor: pointer;
+
+}
+
+.options button{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 17px;
+    background-color: #555353;
+    color: white;
+    padding:5px 10px;
+}
+
+.options button:hover{
+    background-color: #494848;
+
+}
+
+
+.menu{
+    margin-top: 12px;
+}
+
+
+  

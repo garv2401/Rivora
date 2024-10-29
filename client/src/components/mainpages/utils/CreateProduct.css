@@ -1,0 +1,48 @@
+.cont{
+   width:60%;
+   height:90%;
+  margin:10px auto;
+}
+
+.form_data{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+#Label{
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #e94f6c;
+}
+
+#prodID,#title,#desc,#content,#image,#category,#price{
+    padding:5px 10px;
+    border:2px solid #555;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#price{
+    width:90px;
+    margin-left: 10px;
+}
+
+#submit_btn{
+    border:none;
+    width:15%;
+    margin:20px auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding:6px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #555;
+}
+
+#submit_btn:hover{
+    background-color: #323232;
+
+}
