@@ -7,13 +7,22 @@ const app=express();
 require('dotenv').config()
 const port=process.env.port|| 5000;
 
-// app.use(express.json());
-const corsOptions = {
-    origin: 'https://rivora-client.vercel.app',// Allow requests from this origin['http://localhost:5173',
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-};
+// Define the allowed origin
+const allowedOrigin = 'https://rivora-client.vercel.app';
 
-app.use(cors(corsOptions));
+// CORS configuration
+app.use(cors({
+    origin: allowedOrigin,       // Specify the allowed origin
+    credentials: true,           // Allow cookies to be sent
+}));
+
+// app.use(express.json());
+// const corsOptions = {
+//     origin: 'https://rivora-client.vercel.app',// Allow requests from this origin['http://localhost:5173',
+//     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+// };
+
+// app.use(cors(corsOptions));
 //app.use(cors());
 app.use(express.static("public"));
 app.use(cookieParser())
