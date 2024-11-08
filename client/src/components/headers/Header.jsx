@@ -105,7 +105,7 @@ const Header = () => {
 
             <img src={logo} alt="img" />
             <h1>
-                <Link to='/'>{isAdmin?"Admin":"Rivora"}</Link>
+                <Link to='/'>{isAdmin?"Admin":"ReVive"}</Link>
             </h1>
         </div>
         
