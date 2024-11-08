@@ -20,7 +20,7 @@ const Register = () => {
   const registerSubmit=async (e)=>{
     e.preventDefault();
     try{
-      await axios.post('http://localhost:5000/user/register',{...user})
+      await axios.post('https://rivora-server.onrender.com/user/register',{...user})
       localStorage.setItem('firstRegister',true);
       window.location.href='/login'
 
