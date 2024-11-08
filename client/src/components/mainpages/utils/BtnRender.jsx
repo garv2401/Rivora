@@ -17,7 +17,7 @@ const BtnRender = ({product}) => {
     const handleDelete=async(id)=>{
       console.log(id);
       try{
-        axios.delete(`api/products/${id}`)
+        axios.delete(`https://rivora-server.onrender.com/api/products/${id}`)
         console.log('deleted');
         window.location.href='/';
         
