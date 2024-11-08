@@ -7,22 +7,22 @@ const app=express();
 require('dotenv').config()
 const port=process.env.port|| 5000;
 
-// Define the allowed origin
-const allowedOrigin = 'https://rivora-client.vercel.app';
+// // Define the allowed origin
+// const allowedOrigin = 'https://rivora-client.vercel.app';
 
-// CORS configuration
-app.use(cors({
-    origin: allowedOrigin,       // Specify the allowed origin
-    credentials: true,           // Allow cookies to be sent
-}));
+// // CORS configuration
+// app.use(cors({
+//     origin: allowedOrigin,       // Specify the allowed origin
+//     credentials: true,           // Allow cookies to be sent
+// }));
 
-// app.use(express.json());
-// const corsOptions = {
-//     origin: 'https://rivora-client.vercel.app',// Allow requests from this origin['http://localhost:5173',
-//     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-// };
+app.use(express.json());
+const corsOptions = {
+    origin: 'https://rivora-client.vercel.app',// Allow requests from this origin['http://localhost:5173',
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+};
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 //app.use(cors());
 app.use(express.static("public"));
 app.use(cookieParser())
@@ -37,13 +37,13 @@ app.listen(port,()=>{
 
 
 //routes
-app.use('/user',require('./routes/userRoutes'))
-app.use('/api',require('./routes/categoryRoutes'))
-app.use('/api',require('./routes/productRoutes'))
-app.use('/api',require('./routes/upload'))
-app.use('/api',require('./routes/casualProutes'))
-app.use('/api',require('./routes/formalProutes'))
-app.use('/api',require('./routes/ethnicProutes'))
+app.use(cors(corsOptions),'/user',require('./routes/userRoutes'))
+app.use(cors(corsOptions),'/api',require('./routes/categoryRoutes'))
+app.use(cors(corsOptions),'/api',require('./routes/productRoutes'))
+app.use(cors(corsOptions),'/api',require('./routes/upload'))
+app.use(cors(corsOptions),'/api',require('./routes/casualProutes'))
+app.use(cors(corsOptions),'/api',require('./routes/formalProutes'))
+app.use(cors(corsOptions),'/api',require('./routes/ethnicProutes'))
 
 
 
