@@ -13,7 +13,7 @@ const Formal = () => {
   
 
   const getProducts=async()=>{
-      const res=await axios.get('/api/formalProducts');
+      const res=await axios.get('https://rivora-server.onrender.com/api/formalProducts');
       //console.log(res.data.products);
       setproducts(res.data.products);
       console.log(products);
