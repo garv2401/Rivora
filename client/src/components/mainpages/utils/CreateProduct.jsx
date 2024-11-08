@@ -55,7 +55,7 @@ const CreateProduct = () => {
         const data={product_id,title,price,description,images:{"publicUrl":image,"imageUrl":""},content,category};
         console.log(data);
         try{
-            await axios.post('/api/products',data);
+            await axios.post('https://rivora-server.onrender.com/api/products',data);
             console.log('Product created');
             window.location.href='/';
 
