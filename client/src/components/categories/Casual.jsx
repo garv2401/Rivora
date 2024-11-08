@@ -13,7 +13,7 @@ const Casual = () => {
   
 
   const getProducts=async()=>{
-      const res=await axios.get('/api/casualProducts');
+      const res=await axios.get('https://rivora-server.onrender.com/api/casualProducts');
       //console.log(res.data.products);
       setproducts(res.data.products);
       console.log(products);
