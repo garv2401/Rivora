@@ -13,7 +13,7 @@ const Ethnic = () => {
   
 
   const getProducts=async()=>{
-      const res=await axios.get('/api/ethnicProducts');
+      const res=await axios.get('https://rivora-server.onrender.com/api/ethnicProducts');
       //console.log(res.data.products);
       setproducts(res.data.products);
       console.log(products);
