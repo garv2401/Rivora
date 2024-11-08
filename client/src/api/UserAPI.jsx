@@ -14,7 +14,7 @@ const UserAPI = (token) => {
         if(token){
             const getUser=async()=>{
                 try{
-                    const res=await axios.get('http://localhost:5000/user/info',{
+                    const res=await axios.get('https://rivora-server.onrender.com/user/info',{
                         headers:{Authorization:token}
                     })
 
