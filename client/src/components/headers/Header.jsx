@@ -20,7 +20,7 @@ const Header = () => {
     
 
     const logoutUser=async()=>{
-        await axios.get('/user/logout');
+        await axios.get('https://rivora-server.onrender.com/user/logout');
         localStorage.clear();
         setIsAdmin(false);
         setIsLogged(false);
