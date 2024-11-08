@@ -9,7 +9,7 @@ const port=process.env.port|| 5000;
 
 app.use(express.json());
 const corsOptions = {
-    origin: ['http://localhost:5173','https://rivora-server.onrender.com'] // Allow requests from this origin
+    origin: ['http://localhost:5173','https://rivora-client.vercel.app/'] // Allow requests from this origin
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
 
