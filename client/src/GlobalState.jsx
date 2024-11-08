@@ -9,7 +9,7 @@ export const DataProvider=({children})=>{
     const [token, setToken] = useState(false);
 
     const refreshToken=async()=>{
-        let res=await axios.get('http://localhost:5000/user/refresh_token',{
+        let res=await axios.get('https://rivora-server.onrender.com/user/refresh_token',{
             withCredentials:true
         });
         
