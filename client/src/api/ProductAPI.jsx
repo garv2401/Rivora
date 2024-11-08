@@ -4,7 +4,7 @@ import axios from 'axios'
 const ProductAPI = () => {
     const [products, setproducts] = useState([]);
     const getProducts=async()=>{
-        const res=await axios.get('/api/products');
+        const res=await axios.get('https://rivora-server.onrender.com/api/products');
         setproducts(res.data.products);
     }
     useEffect(()=>{
