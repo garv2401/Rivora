@@ -37,13 +37,13 @@ app.listen(port,()=>{
 
 
 //routes
-app.use(cors(corsOptions),'/user',require('./routes/userRoutes'))
-app.use(cors(corsOptions),'/api',require('./routes/categoryRoutes'))
-app.use(cors(corsOptions),'/api',require('./routes/productRoutes'))
-app.use(cors(corsOptions),'/api',require('./routes/upload'))
-app.use(cors(corsOptions),'/api',require('./routes/casualProutes'))
-app.use(cors(corsOptions),'/api',require('./routes/formalProutes'))
-app.use(cors(corsOptions),'/api',require('./routes/ethnicProutes'))
+app.use('/user',require('./routes/userRoutes'))
+app.use('/api',require('./routes/categoryRoutes'))
+app.use('/api',require('./routes/productRoutes'))
+app.use('/api',require('./routes/upload'))
+app.use('/api',require('./routes/casualProutes'))
+app.use('/api',require('./routes/formalProutes'))
+app.use('/api',require('./routes/ethnicProutes'))
 
 
 
