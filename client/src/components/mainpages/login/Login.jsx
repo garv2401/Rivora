@@ -18,6 +18,7 @@ const Login = () => {
     e.preventDefault();
     try{
       await axios.post('https://rivora-server.onrender.com/user/login',{...user},{withCredentials:true})
+      console.log('Login Success');
       localStorage.setItem('firstLogin',true);
       window.location.href='/'
 
