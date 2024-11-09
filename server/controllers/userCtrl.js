@@ -33,7 +33,7 @@ const userCtrl={
             //setting up a cookie
             res.cookie('refreshtoken',refreshToken,{
                 httpOnly:true,
-                path:'/user/refresh_token'
+                path:'https://rivora-server.onrender.com/user/refresh_token'
 
             })
 
@@ -87,7 +87,7 @@ const userCtrl={
 
         res.cookie('refreshtoken',refreshToken,{
             httpOnly:true,
-            path:'/user/refresh_token'
+            path:'https://rivora-server.onrender.com/user/refresh_token'
 
         })
 
