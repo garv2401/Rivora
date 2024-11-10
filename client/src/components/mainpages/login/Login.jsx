@@ -17,9 +17,10 @@ const Login = () => {
   const loginSubmit=async (e)=>{
     e.preventDefault();
     try{
-      await axios.post('https://rivora-server.onrender.com/user/login',{...user},{withCredentials:true})
+      let res=await axios.post('https://rivora-server.onrender.com/user/login',{...user},{withCredentials:true})
       console.log('Login Success');
       localStorage.setItem('firstLogin',true);
+      localStorage.setItem('token',res.data.accessToken);
       window.location.href='/'
 
 
