@@ -14,7 +14,7 @@ Add to Cart: Allows users to add products to their shopping cart and view them.
 Logout: Ensures secure user logout.
 
 <h4>Admin Features</h4>
-Product Management: Ability to add, update, and remove products.
+Product Management: Ability to add, update, and remove products.<br/>
 Dashboard: Interface to manage product listings.
 
 
