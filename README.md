@@ -22,11 +22,11 @@ Dashboard: Interface to manage product listings.
 JWT Authentication: Ensures that user sessions are secure.
 Database Management: MongoDB for efficient storage and retrieval of user and product data.
 <h4>Deployment:</h4>
-Frontend: Deployed on Vercel.
+Frontend: Deployed on Vercel.<br/>
 Backend: Deployed on Render.
 
 <h3>Tech Stack</h3>
-Frontend: React.js
-Backend: Node.js, Express.js
-Database: MongoDB
+Frontend: React.js<br/>
+Backend: Node.js, Express.js<br/>
+Database: MongoDB<br/>
 Authentication: JSON Web Tokens (JWT)
