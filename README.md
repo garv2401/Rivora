@@ -1,32 +1,32 @@
 <h2>RiVora E-commerce Platform</h2>
 
-<h3>Project Overview</h3>
+<h3>PROJECT OVERVIEW</h3>
 Rivora is a comprehensive e-commerce platform developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers users a seamless shopping experience with secure authentication and user role management. The application includes features for user registration, login, and product management by admins.
 
-<h3>Key Features</h3>
+<h3>KEY FEATURES</h3>
 
 <h4>User Features</h4>
-Authentication and Authorization: Secure user registration and login using JWT tokens.
-User Roles: Supports two main user types:
-Admin: Full access to create, update, and delete products.
-Customer: Can browse products, add items to the cart, and make purchases.
-Add to Cart: Allows users to add products to their shopping cart and view them.
-Logout: Ensures secure user logout.
+<b>Authentication and Authorization : </b> Secure user registration and login using JWT tokens.
+<b>User Roles : </b> Supports two main user types:
+<b>Admin : </b>Admin: Full access to create, update, and delete products.
+<b>Customer : </b>Can browse products, add items to the cart, and make purchases.
+<b>Add to Cart : </b>Allows users to add products to their shopping cart and view them.
+<b>Logout : </b>Ensures secure user logout.
 
 <h4>Admin Features</h4>
-Product Management: Ability to add, update, and remove products.<br/>
-Dashboard: Interface to manage product listings.
+<b>Product Management : </b>Ability to add, update, and remove products.<br/>
+<b>Dashboard : </b>Interface to manage product listings.
 
 
-<h3>Technical Features</h3>
-JWT Authentication: Ensures that user sessions are secure.<br/>
-Database Management: MongoDB for efficient storage and retrieval of user and product data.
+<h3>TECHNICAL FEATURES</h3>
+<b>JWT Authentication : </b>Ensures that user sessions are secure.<br/>
+<b>Database Management : </b>MongoDB for efficient storage and retrieval of user and product data.
 <h4>Deployment:</h4>
-Frontend: Deployed on Vercel.<br/>
-Backend: Deployed on Render.
+<b>Frontend : </b>Deployed on Vercel<br/>
+<b>Backend : </b>Deployed on Render
 
-<h3>Tech Stack</h3>
-Frontend: React.js<br/>
-Backend: Node.js, Express.js<br/>
-Database: MongoDB<br/>
-Authentication: JSON Web Tokens (JWT)
+<h3>TECH STACK</h3>
+<b>Frontend : </b>React.js<br/>
+<b>Backend : </b>Node.js, Express.js<br/>
+<b>Database : </b>MongoDB<br/>
+<b>Authentication : </b>JSON Web Tokens (JWT)
