@@ -1,4 +1,4 @@
-<h2>Rivora E-commerce Platform</h2>
+<h2>RiVora E-commerce Platform</h2>
 
 <h3>Project Overview</h3>
 Rivora is a comprehensive e-commerce platform developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers users a seamless shopping experience with secure authentication and user role management. The application includes features for user registration, login, and product management by admins.
@@ -19,7 +19,7 @@ Dashboard: Interface to manage product listings.
 
 
 <h3>Technical Features</h3>
-JWT Authentication: Ensures that user sessions are secure.
+JWT Authentication: Ensures that user sessions are secure.<br/>
 Database Management: MongoDB for efficient storage and retrieval of user and product data.
 <h4>Deployment:</h4>
 Frontend: Deployed on Vercel.<br/>
