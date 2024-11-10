@@ -7,11 +7,12 @@ Rivora is a comprehensive e-commerce platform developed using the MERN stack (Mo
 
 <h4>User Features</h4>
 <b>Authentication and Authorization : </b> Secure user registration and login using JWT tokens.<br/>
+<b>Add to Cart : </b>Allows users to add products to their shopping cart and view them.<br/>
+<b>Logout : </b>Ensures secure user logout.<br/>
 <h4>User Roles : </h4> Supports two main user types:<br/>
 <b>Admin : </b>Full access to create, update, and delete products.<br/>
 <b>Customer : </b>Can browse products, add items to the cart, and make purchases.<br/>
-<b>Add to Cart : </b>Allows users to add products to their shopping cart and view them.<br/>
-<b>Logout : </b>Ensures secure user logout.<br/>
+
 
 <h4>Admin Features</h4>
 <b>Product Management : </b>Ability to add, update, and remove products.<br/>
