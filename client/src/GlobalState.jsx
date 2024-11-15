@@ -17,6 +17,7 @@ export const DataProvider=({children})=>{
     }
 
     useEffect(()=>{
+        const startRenderServer=axios.get('https://api.render.com/deploy/srv-csmreb0gph6c73foqdog?key=hkRIxqkSfMA');
         const firstLogin=localStorage.getItem('firstLogin');
         setToken(localStorage.getItem('token'));
         if(firstLogin){
