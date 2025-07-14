@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log('Server running on 5000 port')
+    console.log('Server running on 4000 port')
 })
 
 
